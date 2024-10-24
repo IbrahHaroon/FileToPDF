@@ -9,6 +9,7 @@ def imageToPDF(image, output):
             if img.mode != 'RGB':
                 img = img.convert('RGB')
             img.save(output)
-        print("Converted" + image "to" + output)
+        print("Converted {image} to {output} output")
     except Exception as e:
-        print("Error converting" +  image + ":" + e)
+        print("Error converting {image} : {e}")
+
